@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hon Tap Totor | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVUc5wzTFz9cWXgwXGQrxmQ6F+7hJs0B5UE7R+vMT4eFAklgT3e4K5uM6k6ZgDsvx40p5xI1Dj93z+Un6BdYww=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 </head>
-
 <body>
-<header>
-    <nav>
-        <h1>Hon Tap Totor</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+  <!-- Navigation -->
+  <nav id="navbar" class="sticky-nav">
+    <div class="container">
+      <a href="index.html" class="logo">YourName</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
 
-<main>
-    <section>
-        <h2>Welcome to My Portfolio</h2>
-        <p>I’m Hon Tap Totor, a passionate developer focused on building modern websites and applications.</p>
-    </section>
-</main>
+  <!-- Hero Section -->
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-container">
+    
+    <!-- Social Links -->
+    <div class="social-vertical">
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
 
-<script src="js/script.js"></script>
+    <!-- Main Content -->
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Hi, I’m Hon Tap Totor</h1>
+      <p>A passionate developer crafting impactful solutions.</p>
+      <a href="#contact" class="hero-btn">Contact Me</a>
+    </div>
+
+    <!-- Photo -->
+    <div class="hero-photo" data-aos="fade-left">
+      <img src="assets/yourphoto.jpg" alt="Profile photo" />
+    </div>
+
+  </div>
+</section>
+
+
+
+  <script src="js/script.js"></script>
+    <!-- AOS Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
