@@ -3,30 +3,115 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hon Tap Totor | Portfolio</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-<header>
-    <nav>
-        <h2>Hon Tap Totor</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+<!-- ✅ Uniform Header from index.html -->
+<header class="site-header" id="header">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="logo">HonTap</a>
+
+        <nav class="nav" id="nav">
+            <button class="close-btn" id="close-btn">✕</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger">☰</button>
+        <button class="theme-toggle" id="theme-toggle">🌓</button>
+    </div>
 </header>
 
-<main>
-    <section>
-        <h2>Welcome to My Portfolio</h2>
-        <p>I’m Hon Tap Totor, a passionate developer focused on building modern websites and applications.</p>
-    </section>
-</main>
+<!-- ✅ About Section -->
+<section class="about-section about-photo" data-aos="fade-up zoom-in">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="assets/about.jpg" alt="Your Photo">
+        </div>
+        <div class="about-text" data-aos="fade-left">
+            <h2>About Me</h2>
+            <p>Hello! I’m a passionate web developer who loves crafting interactive, clean, and functional websites. With a focus on HTML, CSS, JavaScript, and UI/UX, I aim to bring ideas to life on the web.</p>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript, Git, Responsive Design</p>
+            <p><strong>Tools:</strong> VS Code, GitHub, Figma, Chrome DevTools</p>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+    </div>
+</section>
 
+<!-- ✅ Uniform Footer from index.html -->
+<!-----------------------------------------Footer------------------------------------------>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section brand">
+            <h2>Hon Tap</h2>
+            <p>Web Developer passionate about clean code, creative design, and building for the web.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: your@email.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+
+        <div class="footer-section social">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Hon Tap. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true      // only animate once while scrolling down
+    });
+</script>
+
+
+<script src="libs/aos.min.js"></script>
 <script src="js/script.js"></script>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+
 </body>
 </html>
