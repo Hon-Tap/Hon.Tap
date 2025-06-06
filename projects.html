@@ -3,30 +3,179 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hon Tap Totor | Portfolio</title>
+    <title>Projects | Hon Tap Totor</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-    <nav>
-        <h2>Hon Tap Totor</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+<!-- Header -->
+<header class="site-header" id="header">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="logo">HonTap</a>
+
+        <nav class="nav" id="nav">
+            <button class="close-btn" id="close-btn">✕</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <button class="hamburger" id="hamburger">☰</button>
+        <button class="theme-toggle" id="theme-toggle">🌓</button>
+    </div>
 </header>
 
-<main>
-    <section>
-        <h2>Welcome to My Portfolio</h2>
-        <p>I’m Hon Tap Totor, a passionate developer focused on building modern websites and applications.</p>
-    </section>
-</main>
+<!-- ✅ PROJECTS SECTION -->
+<section class="projects container">
+    <h2 class="section-title" data-aos="fade-up">My Projects</h2>
 
-<script src="js/script.js"></script>
+    <!-- Filter Buttons -->
+    <div class="filter-buttons" data-aos="fade-up">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="web">Web</button>
+        <button class="filter-btn" data-category="design">Design</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card" data-category="web" data-aos="fade-up">
+            <img src="assets/NHF.jpeg" alt="Project 1" />
+            <div class="project-info">
+                <h3>National Health Foundation</h3>
+                <p>A responsive health organization website.</p>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card" data-category="design" data-aos="fade-up">
+            <img src="assets/FYU.jpeg" alt="Project 2" />
+            <div class="project-info">
+                <h3>Fangak Youth Union</h3>
+                <p>A community-based youth empowerment site.</p>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card" data-category="web" data-aos="fade-up">
+            <img src="assets/media.jpeg" alt="My Portfolio" />
+            <div class="project-info">
+                <h3>Personal Portfolio</h3>
+                <p>This professional portfolio you're viewing now.</p>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div id="project-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="assets/project-preview.jpg" alt="Project Preview">
+        <h3>Project Title</h3>
+        <p>This is a more detailed view of the project. You can describe features, tools, or goals here.</p>
+    </div>
+</div>
+
+
+<!-- ✅ FOOTER (same as index.html) -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section brand">
+            <h2>Hon Tap</h2>
+            <p>Web Developer passionate about clean code, creative design, and building for the web.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: your@email.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+
+        <div class="footer-section social">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Hon Tap. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- ✅ SCRIPTS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+    AOS.init();
+
+    // Project Filter Script
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const projectCards = document.querySelectorAll(".project-card");
+
+    filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const category = btn.dataset.category;
+
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            projectCards.forEach((card) => {
+                if (category === "all" || card.dataset.category === category) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+
+        const hamburger = document.getElementById("hamburger");
+        const closeBtn = document.getElementById("close-btn");
+        const nav = document.getElementById("nav");
+
+        hamburger.addEventListener("click", () => {
+        nav.classList.add("open");
+    });
+
+        closeBtn.addEventListener("click", () => {
+        nav.classList.remove("open");
+    });
+
+</script>
 </body>
 </html>

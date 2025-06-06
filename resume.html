@@ -1,31 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hon Tap Totor | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Professional Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-<header>
-    <nav>
-        <h2>Hon Tap Totor</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Header -->
+<header class="site-header" id="header">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="logo">HonTap</a>
+
+        <nav class="nav" id="nav">
+            <button class="close-btn" id="close-btn">✕</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <button class="hamburger" id="hamburger">☰</button>
+        <button class="theme-toggle" id="theme-toggle">🌓</button>
+    </div>
 </header>
 
-<main>
-    <section>
-        <h2>Welcome to My Portfolio</h2>
-        <p>I’m Hon Tap Totor, a passionate developer focused on building modern websites and applications.</p>
-    </section>
-</main>
+<!-- Hero -->
+<section class="hero">
+    <h1>Hon Tap Totor</h1>
+    <p>Full-Stack Developer | Web & App Enthusiast</p>
+    <img src="assets/media.jpeg" alt="Profile Photo" id="hero-img">
+</section>
+
+<!-- Education -->
+<section class="education reveal">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="edu-card university">
+        <i class="fas fa-university"></i>
+        <h3>University Name</h3>
+        <p>Bachelor of Computer Science</p>
+        <button class="read-more-btn">Read More</button>
+        <div class="more-content">
+            <p>Graduation: 2025<br> GPA: 3.8/4.0<br> Projects: Compiler, Chat App</p>
+        </div>
+    </div>
+    <div class="edu-card secondary">
+        <i class="fas fa-school"></i>
+        <h3>Secondary School</h3>
+        <p>High School Certificate</p>
+        <button class="read-more-btn">Read More</button>
+        <div class="more-content">
+            <p>Completed in 2020<br> Grade: A<br> Top in Math and Physics</p>
+        </div>
+    </div>
+    <div class="edu-card primary">
+        <i class="fas fa-book-reader"></i>
+        <h3>Primary School</h3>
+        <p>Primary Certificate</p>
+        <button class="read-more-btn">Read More</button>
+        <div class="more-content">
+            <p>Completed in 2012<br> Early interest in computers</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section class="skills reveal">
+    <h2><i class="fas fa-tools"></i>Skills</h2>
+    <div class="timeline">
+        <div class="skill left">HTML</div>
+        <div class="skill right">CSS</div>
+        <div class="skill left">JavaScript</div>
+        <div class="skill right">PHP</div>
+        <div class="skill left">Java</div>
+        <div class="skill right">MySQL</div>
+    </div>
+</section>
+
+<!-- Work Experience -->
+<section class="experience reveal">
+    <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+    <div class="job">
+        <h3>Web Developer Intern</h3>
+        <p><strong>Healthcare Foundation Organization</strong> | Jan 2025 – Apr 2025</p>
+        <p>Assisted in developing internal systems, built secure login portals, and maintained documentation.</p>
+    </div>
+    <div class="job">
+        <h3>GDSC Core Member - Developer</h3>
+        <p><strong>Google Developer Student Clubs</strong> | 2024 – Present</p>
+        <p>Led tech meetups, built learning platforms, mentored fellow developers.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section brand">
+            <h2>Hon Tap</h2>
+            <p>Web Developer passionate about clean code, creative design, and building for the web.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: your@email.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+
+        <div class="footer-section social">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Hon Tap. All rights reserved.</p>
+    </div>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
