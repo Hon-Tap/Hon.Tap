@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    // =======================
+    // NAVIGATION TOGGLE
+    // =======================
     const nav = document.getElementById("nav");
     const hamburger = document.getElementById("hamburger");
     const closeBtn = document.getElementById("close-btn");
@@ -11,45 +15,86 @@ document.addEventListener("DOMContentLoaded", () => {
         nav.classList.remove("open");
     });
 
-    // Theme toggle
+    // =======================
+    // THEME TOGGLE
+    // =======================
     const toggleBtn = document.getElementById("theme-toggle");
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === "dark") {
+        document.body.classList.add("dark");
+    }
+
     toggleBtn.addEventListener("click", () => {
         document.body.classList.toggle("dark");
         localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
     });
 
-    if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark");
-    }
-});
+    // =======================
+    // COUNTER ANIMATION
+    // =======================
+    const counters = document.querySelectorAll(".counter");
 
+    const runCounter = (counter) => {
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+            const increment = target / 100;
 
-// Read More toggle (unchanged)
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const content = button.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        button.textContent = content.style.display === 'block' ? 'Show Less' : 'Read More';
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 20);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCount();
+    };
+
+    const counterObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                runCounter(entry.target);
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.6 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // =======================
+    // READ MORE TOGGLE (New Version)
+    // =======================
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const content = this.nextElementSibling;
+            content.classList.toggle('show');
+            this.textContent = content.classList.contains('show') ? 'Read Less' : 'Read More';
+        });
     });
-});
 
-// Intersection Observer for animation on scroll
-const reveals = document.querySelectorAll('.reveal');
+    // =======================
+    // REVEAL ON SCROLL
+    // =======================
+    const reveals = document.querySelectorAll('.reveal');
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-        }
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
     });
-}, {
-    threshold: 0.1
+
+    reveals.forEach(el => revealObserver.observe(el));
 });
 
-reveals.forEach(el => observer.observe(el));
-
-
-
-
-
-
+//Contact
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert("Thank you! Your message has been received. I’ll get back to you shortly.");
+    this.reset(); // clears the form
+});

@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Hon Tap Totor</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome (CDN only, no kit script) -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            integrity="sha512-XxWbJGSqUu2iO5CVX2lC+9HEbxmFO4q6avvXxNNtrclh3WQXc+0A5uPtKYOq4JZfxG/mv9mZ3FHZQnX53T8HKw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
 </head>
+
 <body>
 
 <!-- Header -->
 <header class="site-header" id="header">
     <div class="container nav-wrapper">
-        <a href="index.html" class="logo">HonTap</a>
-
+        <a href="index.html" class="logo">HT</a>
         <nav class="nav" id="nav">
             <button class="close-btn" id="close-btn">✕</button>
             <ul class="nav-links">
@@ -25,8 +35,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-
         <button class="hamburger" id="hamburger">☰</button>
         <button class="theme-toggle" id="theme-toggle">🌓</button>
     </div>
@@ -85,18 +93,18 @@
         </div>
     </div>
 </section>
-<!-- Modal -->
+
+<!-- Modal (Optional Functionality - JS needs to be written to open/close this) -->
 <div id="project-modal" class="modal hidden">
     <div class="modal-content">
         <span class="close-modal">&times;</span>
         <img src="assets/project-preview.jpg" alt="Project Preview">
         <h3>Project Title</h3>
-        <p>This is a more detailed view of the project. You can describe features, tools, or goals here.</p>
+        <p>This is a more detailed view of the project.</p>
     </div>
 </div>
 
-
-<!-- ✅ FOOTER (same as index.html) -->
+<!-- ✅ FOOTER -->
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-section brand">
@@ -122,16 +130,16 @@
         </div>
 
         <div class="footer-section social">
-            <h3>Follow Me</h3>
+            <h3>Social Links</h3>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </div>
-
     <div class="footer-bottom">
         <p>&copy; 2025 Hon Tap. All rights reserved.</p>
     </div>
@@ -139,11 +147,23 @@
 
 <!-- ✅ SCRIPTS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="script.js"></script>
 <script>
     AOS.init();
 
-    // Project Filter Script
+    // Navigation Toggle
+    const hamburger = document.getElementById("hamburger");
+    const closeBtn = document.getElementById("close-btn");
+    const nav = document.getElementById("nav");
+
+    hamburger.addEventListener("click", () => {
+        nav.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        nav.classList.remove("open");
+    });
+
+    // Project Filter
     const filterBtns = document.querySelectorAll(".filter-btn");
     const projectCards = document.querySelectorAll(".project-card");
 
@@ -155,27 +175,12 @@
             btn.classList.add("active");
 
             projectCards.forEach((card) => {
-                if (category === "all" || card.dataset.category === category) {
-                    card.style.display = "block";
-                } else {
-                    card.style.display = "none";
-                }
+                card.style.display = (category === "all" || card.dataset.category === category)
+                    ? "block"
+                    : "none";
             });
         });
     });
-
-        const hamburger = document.getElementById("hamburger");
-        const closeBtn = document.getElementById("close-btn");
-        const nav = document.getElementById("nav");
-
-        hamburger.addEventListener("click", () => {
-        nav.classList.add("open");
-    });
-
-        closeBtn.addEventListener("click", () => {
-        nav.classList.remove("open");
-    });
-
 </script>
 </body>
 </html>

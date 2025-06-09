@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <!-- Header -->
 <header class="site-header" id="header">
     <div class="container nav-wrapper">
-        <a href="index.html" class="logo">HonTap</a>
+        <a href="index.html" class="logo">HT</a>
 
         <nav class="nav" id="nav">
             <button class="close-btn" id="close-btn">✕</button>
@@ -32,48 +35,62 @@
     </div>
 </header>
 
-<!-- Hero -->
-<section class="hero">
-    <h1>Hon Tap Totor</h1>
-    <p>Full-Stack Developer | Web & App Enthusiast</p>
-    <img src="assets/media.jpeg" alt="Profile Photo" id="hero-img">
+<!--Hero Section-->
+
+<section class="hero-section">
+    <div class="hero-container">
+        <div class="hero-text fade-in">
+            <h1>Hon Tap Totor</h1>
+            <p>Full-Stack Developer | Web & App Enthusiast
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum dolor, laboriosam laborum molestiae possimus quibusdam reiciendis sed ut voluptatum.
+            </p>
+        </div>
+        <div class="hero-image fade-in">
+            <img src="assets/media.jpeg" alt="Profile Photo">
+        </div>
+    </div>
 </section>
 
 <!-- Education -->
 <section class="education reveal">
     <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-    <div class="edu-card university">
-        <i class="fas fa-university"></i>
-        <h3>University Name</h3>
-        <p>Bachelor of Computer Science</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-content">
-            <p>Graduation: 2025<br> GPA: 3.8/4.0<br> Projects: Compiler, Chat App</p>
+
+    <div class="level">
+        <div class="edu-card university">
+            <i class="fas fa-university"></i>
+            <h3>University Name</h3>
+            <p>Bachelor of Computer Science</p>
+            <button class="read-more-btn">Read More</button>
+            <div class="more-content">
+                <p>Graduation: 2025<br>GPA: 3.8/4.0<br>Projects: Compiler, Chat App</p>
+            </div>
         </div>
-    </div>
-    <div class="edu-card secondary">
-        <i class="fas fa-school"></i>
-        <h3>Secondary School</h3>
-        <p>High School Certificate</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-content">
-            <p>Completed in 2020<br> Grade: A<br> Top in Math and Physics</p>
+
+        <div class="edu-card secondary">
+            <i class="fas fa-school"></i>
+            <h3>Secondary School</h3>
+            <p>High School Certificate</p>
+            <button class="read-more-btn">Read More</button>
+            <div class="more-content">
+                <p>Completed in 2020<br>Grade: A<br>Top in Math and Physics</p>
+            </div>
         </div>
-    </div>
-    <div class="edu-card primary">
-        <i class="fas fa-book-reader"></i>
-        <h3>Primary School</h3>
-        <p>Primary Certificate</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-content">
-            <p>Completed in 2012<br> Early interest in computers</p>
+
+        <div class="edu-card primary">
+            <i class="fas fa-book-reader"></i>
+            <h3>Primary School</h3>
+            <p>Primary Certificate</p>
+            <button class="read-more-btn">Read More</button>
+            <div class="more-content">
+                <p>Completed in 2012<br>Early interest in computers</p>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Skills -->
 <section class="skills reveal">
-    <h2><i class="fas fa-tools"></i>Skills</h2>
+    <h2><i class="fas fa-tools"></i> Skills</h2>
     <div class="timeline">
         <div class="skill left">HTML</div>
         <div class="skill right">CSS</div>
@@ -87,11 +104,13 @@
 <!-- Work Experience -->
 <section class="experience reveal">
     <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+
     <div class="job">
         <h3>Web Developer Intern</h3>
         <p><strong>Healthcare Foundation Organization</strong> | Jan 2025 – Apr 2025</p>
         <p>Assisted in developing internal systems, built secure login portals, and maintained documentation.</p>
     </div>
+
     <div class="job">
         <h3>GDSC Core Member - Developer</h3>
         <p><strong>Google Developer Student Clubs</strong> | 2024 – Present</p>
@@ -99,6 +118,9 @@
     </div>
 </section>
 
+
+
+<!--Footer Section-->
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-section brand">
@@ -124,12 +146,13 @@
         </div>
 
         <div class="footer-section social">
-            <h3>Follow Me</h3>
+            <h3>Social Links</h3>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </div>
