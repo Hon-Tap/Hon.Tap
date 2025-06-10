@@ -734,13 +734,13 @@ header, footer {
 .filter-btn:hover,
 .filter-btn.active {
     background-color: #2c5683;
-    color: white;
+    color: #202055;
 }
 
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -759,7 +759,7 @@ header, footer {
 
 .project-card img {
     width: 100%;
-    height: 200px;
+    /*height: 200px;*/
     object-fit: cover;
 }
 
@@ -775,7 +775,7 @@ header, footer {
 
 .project-info p {
     font-size: 1rem;
-    color: #d5e6f4;
+    color: #0f1f2b;
     margin-bottom: 1rem;
 }
 

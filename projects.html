@@ -9,7 +9,7 @@
     <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- Font Awesome (CDN only, no kit script) -->
+    <!-- Font Awesome -->
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -21,7 +21,7 @@
 
 <body>
 
-<!-- Header -->
+<!-- ===== Header ===== -->
 <header class="site-header" id="header">
     <div class="container nav-wrapper">
         <a href="index.html" class="logo">HT</a>
@@ -40,97 +40,90 @@
     </div>
 </header>
 
-<!-- ✅ PROJECTS SECTION -->
+<!-- ===== Projects Section ===== -->
 <section class="projects container">
     <h2 class="section-title" data-aos="fade-up">My Projects</h2>
 
-    <!-- Filter Buttons -->
     <div class="filter-buttons" data-aos="fade-up">
         <button class="filter-btn active" data-category="all">All</button>
         <button class="filter-btn" data-category="web">Web</button>
         <button class="filter-btn" data-category="design">Design</button>
     </div>
 
-    <!-- Projects Grid -->
     <div class="projects-grid" id="projects-grid">
-        <!-- Project Card 1 -->
+
+        <!-- Project 1 -->
         <div class="project-card" data-category="web" data-aos="fade-up">
-            <img src="assets/NHF.jpeg" alt="Project 1" />
+            <img src="assets/NHF.jpeg" alt="National Health Foundation" />
             <div class="project-info">
                 <h3>National Health Foundation</h3>
                 <p>
-                    A web platform that allows people in remote areas to request medical help, connecting them with mobile clinics.
-                    - Built with: HTML, CSS, JavaScript (planning to integrate backend)
-                    - Role: Front-end developer and site planner
+                    A platform helping rural users request medical assistance via mobile clinics.<br>
+                    <strong>Built with:</strong> HTML, CSS, JavaScript<br>
+                    <strong>Role:</strong> Frontend Developer, Planner
                 </p>
-                <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
+<!--                <div class="project-links">-->
+<!--                    <a href="https://yourdemo.com/nhf" target="_blank" class="btn">Live Demo</a>-->
+<!--                    <a href="https://github.com/yourusername/nhf" target="_blank" class="btn">GitHub</a>-->
+<!--                </div>-->
             </div>
         </div>
 
-        <!-- Project Card 2 -->
+        <!-- Project 2 -->
         <div class="project-card" data-category="design" data-aos="fade-up">
-            <img src="assets/FYU.jpeg" alt="Project 2" />
+            <img src="assets/FYU.jpeg" alt="Fangak Youth Union" />
             <div class="project-info">
                 <h3>Fangak Youth Union</h3>
-                <p>- A digital platform for youth from Fangak to share ideas, support community development, and promote education and career exposure.
-                    - Built with: HTML, CSS, JavaScript, PHP
-                    - Role: Lead developer and designer
+                <p>
+                    Platform for youth to promote development and education in Fangak.<br>
+                    <strong>Built with:</strong> HTML, CSS, JavaScript, PHP<br>
+                    <strong>Role:</strong> Lead Developer & Designer
                 </p>
-                <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
+<!--                <div class="project-links">-->
+<!--                    <a href="https://yourdemo.com/fyu" target="_blank" class="btn">Live Demo</a>-->
+<!--                    <a href="https://github.com/yourusername/fyu" target="_blank" class="btn">GitHub</a>-->
+<!--                </div>-->
             </div>
         </div>
 
-        <!-- Project Card 3 -->
+        <!-- Project 3 -->
         <div class="project-card" data-category="web" data-aos="fade-up">
-            <img src="assets/media.jpeg" alt="My Portfolio" />
+            <img src="assets/media.jpeg" alt="Portfolio" />
             <div class="project-info">
                 <h3>Personal Portfolio</h3>
-                <p> - A modern, responsive personal website to showcase my skills, projects, and resume.
-                    - Built with: HTML, CSS, JavaScript
-                    - Role: Solo developer</p>
-                <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
+                <p>
+                    A responsive site to showcase my resume, skills, and work.<br>
+                    <strong>Built with:</strong> HTML, CSS, JavaScript<br>
+                    <strong>Role:</strong> Solo Developer
+                </p>
+<!--                <div class="project-links">-->
+<!--                    <a href="https://yourname.github.io/portfolio" target="_blank" class="btn">Live Demo</a>-->
+<!--                    <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn">GitHub</a>-->
+<!--                </div>-->
             </div>
         </div>
-        <!--Project card 4-->
+
+        <!-- Project 4 -->
         <div class="project-card" data-category="web" data-aos="fade-up">
-            <img src="assets/Luth.png" alt="My Portfolio" />
+            <img src="assets/Luth.png" alt="Luth Game" />
             <div class="project-info">
                 <h3>Luth Game</h3>
                 <p>
-                    A traditional South Sudanese puzzle game loved for its fun and cultural relevance.
-                    - Tools: Planning phase (will use JavaScript or game engine)
-                    - Role: Game designer and developer
+                    Traditional puzzle game celebrating South Sudanese culture.<br>
+                    <strong>Status:</strong> In planning<br>
+                    <strong>Role:</strong> Game Designer/Developer
                 </p>
-                <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
+<!--                <div class="project-links">-->
+<!--                    <a href="#" class="btn disabled">Coming Soon</a>-->
+<!--                    <a href="https://github.com/yourusername/luth-game" target="_blank" class="btn">GitHub</a>-->
+<!--                </div>-->
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- Modal (Optional Functionality - JS needs to be written to open/close this) -->
-<div id="project-modal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <img src="assets/project-preview.jpg" alt="Project Preview">
-        <h3>Project Title</h3>
-        <p>This is a more detailed view of the project.</p>
-    </div>
-</div>
-
-<!-- ✅ FOOTER -->
+<!-- ===== Footer ===== -->
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-section brand">
@@ -158,11 +151,11 @@
         <div class="footer-section social">
             <h3>Social Links</h3>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="linkedin.com/in/hon-tap-83a644262" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/message/TE3Y6DXAFZ3OL1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </div>
@@ -171,39 +164,31 @@
     </div>
 </footer>
 
-<!-- ✅ SCRIPTS -->
+<!-- ===== Scripts ===== -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
 
-    // Navigation Toggle
-    const hamburger = document.getElementById("hamburger");
-    const closeBtn = document.getElementById("close-btn");
-    const nav = document.getElementById("nav");
+    // Navigation toggle
+    document.getElementById("hamburger").onclick = () => {
+        document.getElementById("nav").classList.add("open");
+    };
+    document.getElementById("close-btn").onclick = () => {
+        document.getElementById("nav").classList.remove("open");
+    };
 
-    hamburger.addEventListener("click", () => {
-        nav.classList.add("open");
-    });
-
-    closeBtn.addEventListener("click", () => {
-        nav.classList.remove("open");
-    });
-
-    // Project Filter
+    // Project filter
     const filterBtns = document.querySelectorAll(".filter-btn");
     const projectCards = document.querySelectorAll(".project-card");
 
-    filterBtns.forEach((btn) => {
+    filterBtns.forEach(btn => {
         btn.addEventListener("click", () => {
             const category = btn.dataset.category;
-
-            filterBtns.forEach((b) => b.classList.remove("active"));
+            filterBtns.forEach(b => b.classList.remove("active"));
             btn.classList.add("active");
 
-            projectCards.forEach((card) => {
-                card.style.display = (category === "all" || card.dataset.category === category)
-                    ? "block"
-                    : "none";
+            projectCards.forEach(card => {
+                card.style.display = (category === "all" || card.dataset.category === category) ? "block" : "none";
             });
         });
     });
