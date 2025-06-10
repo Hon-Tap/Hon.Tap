@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 obs.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.6 });
+    }, { threshold: 0.8 });
 
     counters.forEach(counter => counterObserver.observe(counter));
 
