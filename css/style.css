@@ -293,6 +293,10 @@ header, footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .intro h1 {
+    font-size: 14rem;
+    margin-bottom: 0.5rem;
+}
         .hero-content, .about-section, .projects-section {
             width: 100% !important;
             padding: 0 1rem;
@@ -403,6 +407,10 @@ header, footer {
 
 /* Tablet */
 @media (max-width: 768px) {
+    .intro h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
     .tech-stack h2 {
         font-size: 1.5rem;
     }
