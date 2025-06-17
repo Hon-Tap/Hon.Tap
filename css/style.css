@@ -160,7 +160,7 @@ header, footer {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, #86afd1, #4b84c8);
+    background: linear-gradient(to right, #eef4fa, #6ba5ea);
     border-radius: 1px;
     animation: underline-glow 4s infinite linear;
     transform-origin: left;
