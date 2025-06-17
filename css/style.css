@@ -253,7 +253,7 @@ header, footer {
 }
 
 .intro h1 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 .intro p {
@@ -293,6 +293,10 @@ header, footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .intro h1 {
+    font-size: 14rem;
+    margin-bottom: 0.5rem;
+}
         .hero-content, .about-section, .projects-section {
             width: 100% !important;
             padding: 0 1rem;
@@ -368,8 +372,8 @@ header, footer {
 }
 
 .tech-stack h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
     color: black;
 }
 
@@ -403,6 +407,10 @@ header, footer {
 
 /* Tablet */
 @media (max-width: 768px) {
+    .intro h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
     .tech-stack h2 {
         font-size: 1.5rem;
     }
