@@ -1,149 +1,1123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Hon Tap</title>
 
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="libs/aos.min.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Hon Tap | Portfolio</title>
 
 
 
-    <!-- Styles -->
+    <link
+
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+
+      rel="stylesheet"
+
+    />
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+
+    />
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
 
-<!-- Header -->
-<header class="site-header" id="header">
-    <div class="container nav-wrapper">
-        <a href="index.html" class="logo">HT</a>
+  </head>
+
+  <body>
+
+    <header class="site-header" id="header">
+
+      <div class="container nav-wrapper">
+
+        <a href="#home" class="logo">HT</a>
 
         <nav class="nav" id="nav">
-            <button class="close-btn" id="close-btn">✕</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+          <button
+
+            type="button"
+
+            class="close-btn"
+
+            id="close-btn"
+
+            aria-label="Close navigation menu"
+
+          >
+
+            <i class="fas fa-times"></i>
+
+          </button>
+
+          <ul class="nav-links">
+
+            <li><a href="#home" class="active">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#resume">Resume</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+
         </nav>
 
-        <button class="hamburger" id="hamburger">☰</button>
-        <button class="theme-toggle" id="theme-toggle">🌓</button>
-    </div>
-</header>
+        <button
 
-<!-- Hero Section -->
-<section class="hero container" id="hero">
-    <div class="socials">
-        <a href="https://github.com/Hon-Tap" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://wa.me/message/TE3Y6DXAFZ3OL1" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-    </div>
+          type="button"
 
-    <div class="intro hero-content" data-aos="fade-right">
-        <h1>Hello, I'm Hon Tap</h1>
+          class="hamburger"
+
+          id="hamburger"
+
+          aria-label="Open navigation menu"
+
+        >
+
+          <i class="fas fa-bars"></i>
+
+        </button>
+
+        <button
+
+          type="button"
+
+          class="theme-toggle"
+
+          id="theme-toggle"
+
+          aria-label="Toggle dark/light theme"
+
+        >
+
+          <i class="fas fa-moon"></i>
+
+        </button>
+
+      </div>
+
+    </header>
+
+
+
+    <section class="hero-section container" id="home">
+
+      <div class="socials">
+
+        <a href="https://github.com/Hon-Tap" target="_blank" aria-label="GitHub"
+
+          ><i class="fab fa-github"></i
+
+        ></a>
+
+        <a href="#" target="_blank" aria-label="LinkedIn"
+
+          ><i class="fab fa-linkedin"></i
+
+        ></a>
+
+        <a href="#" target="_blank" aria-label="Facebook"
+
+          ><i class="fab fa-facebook"></i
+
+        ></a>
+
+        <a
+
+          href="https://wa.me/message/TE3Y6DXAFZ3OL1"
+
+          target="_blank"
+
+          aria-label="WhatsApp"
+
+          ><i class="fab fa-whatsapp"></i
+
+        ></a>
+
+        <a href="#" target="_blank" aria-label="Twitter"
+
+          ><i class="fab fa-twitter"></i
+
+        ></a>
+
+      </div>
+
+
+
+      <div class="hero-content" data-aos="fade-up">
+
+        <h1>HT Mathiang</h1>
+
+        <h3>Software Developer | UI/UX Enthusiast</h3>
+
         <p>
-           — a passionate Web Developer and Computer Science student at Starford International University, South Sudan.
-            I specialize in front-end development and love turning ideas into interactive and impactful web experiences.
+
+          Final-year Computer Science student specializing in front-end
+
+          development and UI/UX. I'm passionate about creating purposeful
+
+          digital experiences that bridge creativity and technology.
+
         </p>
-        <a href="contact.html" class="btn" id="#contact">Let’s Connect</a>
-    </div>
 
-    <div class="hero-photo hero-images" data-aos="fade-left">
-        <img src="assets/about.jpg" alt="Hon Tap Photo" />
-    </div>
-</section>
+        <div class="hero-buttons">
 
-<!-- Technologies-->
-<section class="tech-stack" data-aos="fade-up">
-    <h2>Technologies I Use</h2>
-    <div class="tech-icons">
-        <i class="devicon-html5-plain colored" title="HTML5"></i>
-        <i class="devicon-css3-plain colored" title="CSS3"></i>
-        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-        <i class="devicon-git-plain colored" title="Git"></i>
-        <i class="devicon-github-original colored" title="GitHub"></i>
-        <i class="devicon-vscode-plain colored" title="VS Code"></i>
-        <i class="devicon-linux-plain colored" title="Linux"></i>
-        <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
-    </div>
-</section>
+          <a href="#contact" class="btn">Let’s Connect</a>
 
+          <a href="#projects" class="btn btn-secondary">My Work</a>
 
-
-<!-----------------------------------------Footer------------------------------------------>
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section brand">
-            <h2>Hon Tap</h2>
-            <p>Web Developer passionate about clean code, creative design, and building for the web.</p>
         </div>
 
-        <div class="footer-section links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+      </div>
+
+
+
+      <div class="hero-image" data-aos="fade-left">
+
+        <img src="assets/profile.jpg" alt="Hon Tap Profile Photo" />
+
+      </div>
+
+    </section>
+
+
+
+    <section class="about-section" id="about">
+
+      <div class="container about-container">
+
+        <div class="about-image" data-aos="fade-right">
+
+          <img src="assets/about.jpg" alt="Hon Tap at work" />
+
         </div>
 
-        <div class="footer-section contact">
-            <h3>Contact</h3>
-            <p>Email: hontmathiang@gmail.com</p>
-            <p>Phone: +211922863636</p>
+        <div class="about-content" data-aos="fade-left">
+
+          <h2 class="section-title">About Me</h2>
+
+          <p>
+
+            I'm a Computer Science student passionate about web development,
+
+            UI/UX design, and problem-solving. I’m on a journey to master
+
+            full-stack development while exploring the creative side of
+
+            technology through design and innovation.
+
+          </p>
+
+          <blockquote>“Code is my brush, and the web is my canvas.”</blockquote>
+
+
+
+          <h4>My Toolkit</h4>
+
+          <div class="skills-icons">
+
+            <i class="devicon-html5-plain-wordmark" style="color: #e34f26"></i>
+
+            <i class="devicon-css3-plain-wordmark" style="color: #1572b6"></i>
+
+            <i
+
+              class="devicon-javascript-plain"
+
+              style="color: #f7df1e; background-color: #000; border-radius: 3px"
+
+            ></i>
+
+            <i class="devicon-php-plain" style="color: #777bb4"></i>
+
+            <i class="devicon-java-plain-wordmark" style="color: #007396"></i>
+
+            <i class="devicon-kotlin-plain-wordmark" style="color: #7f52ff"></i>
+
+            <i class="devicon-mysql-plain-wordmark" style="color: #4479a1"></i>
+
+            <i class="devicon-git-plain-wordmark" style="color: #f05032"></i>
+
+            <i class="devicon-github-original-wordmark"></i>
+
+            <i class="devicon-figma-plain" style="color: #f24e1e"></i>
+
+            <i class="devicon-vscode-plain-wordmark" style="color: #007acc"></i>
+
+          </div>
+
+
+
+          <a
+
+            href="https://drive.google.com/file/d/1kUlfoeQlb3O9vY--iya2yE80HOnSLhK1/view?usp=drive_link"
+
+            target="_blank"
+
+            class="btn"
+
+            ><i class="fas fa-download" aria-hidden="true"></i> Download CV</a
+
+          >
+
         </div>
 
-        <div class="footer-section social">
-            <h3>Social Links</h3>
-            <div class="social-icons">
-                <a href="https://github.com/Hon-Tap" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/hon-tap-83a644262" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://wa.me/message/TE3Y6DXAFZ3OL1" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+
+    </section>
+
+
+
+    <section class="projects" id="projects">
+
+      <div class="container">
+
+        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+
+
+
+        <div class="filter-buttons" data-aos="fade-up">
+
+          <button class="filter-btn" data-category="all" type="button">
+
+            All
+
+          </button>
+
+          <button class="filter-btn" data-category="web" type="button">
+
+            Web
+
+          </button>
+
+          <button class="filter-btn" data-category="design" type="button">
+
+            Design
+
+          </button>
+
+        </div>
+
+
+
+        <div class="projects-grid" id="projects-grid">
+
+          <div
+
+            class="project-card"
+
+            data-category="web"
+
+            data-aos="fade-up"
+
+            data-aos-delay="100"
+
+          >
+
+            <div class="project-image">
+
+              <img src="assets/CCO.jpg" alt="Compassion Care Organization" />
+
             </div>
+
+            <div class="project-info">
+
+              <h3>Compassion Care Organization</h3>
+
+              <p>
+
+                CCO is a South Sudanese non-profit organization working to
+
+                advance community health, nutrition, WASH, sports, and
+
+                education. Headquartered in Juba, with operations across South
+
+                Sudan.
+
+              </p>
+
+              <div class="project-tech">
+
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a
+
+                  href="https://github.com/Hon-Tap/CCO"
+
+                  target="_blank"
+
+                  class="project-link"
+
+                  ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
+
+                >
+
+                <a
+
+                  href="https://hon-tap.github.io/CCO/"
+
+                  target="_blank"
+
+                  class="project-link"
+
+                  ><i
+
+                    class="fas fa-external-link-alt"
+
+                    aria-hidden="true"
+
+                  ></i>
+
+                  Live Demo</a
+
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div
+
+            class="project-card"
+
+            data-category="web"
+
+            data-aos="fade-up"
+
+            data-aos-delay="200"
+
+          >
+
+            <div class="project-image">
+
+              <img src="assets/FYU-LOGO.jpg" alt="Fangak Youth Union" />
+
+            </div>
+
+            <div class="project-info">
+
+              <h3>Fangak Youth Union</h3>
+
+              <p>
+
+                A platform that empowers youth and promotes development and
+
+                education in Fangak.
+
+              </p>
+
+              <div class="project-tech">
+
+                <span>HTML</span><span>CSS</span><span>JS</span><span>PHP</span
+
+                ><span>MySQL</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="#" target="_blank" class="project-link"
+
+                  ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
+
+                >
+
+                <a href="assets/Blog.mp4" target="_blank" class="project-link"
+
+                  ><i
+
+                    class="fas fa-external-link-alt"
+
+                    aria-hidden="true"
+
+                  ></i>
+
+                  Live Demo</a
+
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div
+
+            class="project-card"
+
+            data-category="web"
+
+            data-aos="fade-up"
+
+            data-aos-delay="300"
+
+          >
+
+            <div class="project-image">
+
+              <img src="assets/media.jpg" alt="Personal Portfolio Website" />
+
+            </div>
+
+            <div class="project-info">
+
+              <h3>Personal Portfolio</h3>
+
+              <p>
+
+                My responsive portfolio showcasing resume, skills, and projects
+
+                you're viewing now.
+
+              </p>
+
+              <div class="project-tech">
+
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="#" target="_blank" class="project-link"
+
+                  ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
+
+                >
+
+                <a href="assets/pw_Trim.mp4" target="_blank" class="project-link"
+
+                  ><i
+
+                    class="fas fa-external-link-alt"
+
+                    aria-hidden="true"
+
+                  ></i>
+
+                  Live Demo</a
+
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div
+
+            class="project-card"
+
+            data-category="web"
+
+            data-aos="fade-up"
+
+            data-aos-delay="300"
+
+          >
+
+            <div class="project-image">
+
+              <img src="assets/Re-Logo.jpg" alt="ReSEED organization" />
+
+            </div>
+
+            <div class="project-info">
+
+              <h3>ReSEED</h3>
+
+              <p>
+
+                ReSEED is a dynamic social enterprise based in South Sudan,
+
+                dedicated to transforming flood-prone regions into resilient,
+
+                food-secure communities.
+
+              </p>
+
+              <div class="project-tech">
+
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="#" target="_blank" class="project-link"
+
+                  ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
+
+                >
+
+                <a href="assets/pw_Trim.mp4" target="_blank" class="project-link"
+
+                  ><i
+
+                    class="fas fa-external-link-alt"
+
+                    aria-hidden="true"
+
+                  ></i>
+
+                  Live Demo</a
+
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+          </div>
+
+
+
+        <div class="projects-more-container" data-aos="fade-up">
+
+          <button id="projects-more-btn" class="btn btn-primary" type="button">
+
+            Show More
+
+          </button>
+
         </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="resume-section" id="resume">
+
+      <div class="container" data-aos="fade-up">
+
+        <h2 class="section-title">My Resume</h2>
+
+        <p class="resume-intro">
+
+          A summary of my professional journey, education, and technical skills.
+
+        </p>
+
+
+
+        <div class="resume-tabs">
+
+          <button
+
+            type="button"
+
+            class="tab-btn active"
+
+            data-target="education"
+
+          >
+
+            <i class="fas fa-graduation-cap" aria-hidden="true"></i> Education
+
+          </button>
+
+          <button type="button" class="tab-btn" data-target="experience">
+
+            <i class="fas fa-briefcase" aria-hidden="true"></i> Experience
+
+          </button>
+
+          <button type="button" class="tab-btn" data-target="skills">
+
+            <i class="fas fa-tools" aria-hidden="true"></i> Skills
+
+          </button>
+
+        </div>
+
+
+
+        <div class="resume-panels">
+
+          <div class="resume-panel active" id="education">
+
+            <div class="timeline">
+
+              <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                  <i class="fas fa-university" aria-hidden="true"></i>
+
+                </div>
+
+                <span class="timeline-year">2026 (Expected)</span>
+
+                <h3 class="timeline-title">Bachelor of Computer Science</h3>
+
+                <p class="timeline-subtitle">Starford International University</p>
+
+                <p class="timeline-text">
+
+                  Building strong foundations in programming, databases, and web
+
+                  systems. Working on university projects like Luth Game and NHF
+
+                  website.
+
+                </p>
+
+              </div>
+
+              <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                  <i class="fas fa-code" aria-hidden="true"></i>
+
+                </div>
+
+                <span class="timeline-year">2024</span>
+
+                <h3 class="timeline-title">Certificate in Web Development</h3>
+
+                <p class="timeline-subtitle">Coding Mentorship Initiative (CMI)</p>
+
+                <p class="timeline-text">
+
+                  Learned modern web fundamentals (HTML, CSS, JS), responsive
+
+                  layouts, and developed my first personal portfolio.
+
+                </p>
+
+              </div>
+
+              <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                  <i class="fas fa-school" aria-hidden="true"></i>
+
+                </div>
+
+                <span class="timeline-year">2019</span>
+
+                <h3 class="timeline-title">Uganda Certificate of Education</h3>
+
+                <p class="timeline-subtitle">St. Andrew's College – Moyo</p>
+
+                <p class="timeline-text">
+
+                  Excelled in Math and Chemistry. Developed analytical and
+
+                  logical problem-solving skills.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="resume-panel" id="experience">
+
+            <div class="timeline">
+
+              <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                  <i class="fas fa-globe" aria-hidden="true"></i>
+
+                </div>
+
+                <span class="timeline-year">Jan 2025 – Present</span>
+
+                <h3 class="timeline-title">Internet Business Manager</h3>
+
+                <p class="timeline-subtitle">Self-Employed</p>
+
+                <p class="timeline-text">
+
+                  Managing day-to-day internet services, ensuring uptime,
+
+                  supporting clients, and promoting local digital access
+
+                  initiatives.
+
+                </p>
+
+              </div>
+
+              <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                  <i class="fab fa-google" aria-hidden="true"></i>
+
+                </div>
+
+                <span class="timeline-year">2024 – Present</span>
+
+                <h3 class="timeline-title">GDSC Deputy Lead for Innovation</h3>
+
+                <p class="timeline-subtitle">Google Developer Student Clubs</p>
+
+                <p class="timeline-text">
+
+                  Organized workshops, mentored peers, and contributed to
+
+                  innovative community tech projects that foster collaboration
+
+                  and learning.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="resume-panel" id="skills">
+
+            <div class="skills-container">
+
+              <div class="skill-bar">
+
+                <span>HTML</span>
+
+                <div class="bar">
+
+                  <div class="progress" style="width: 95%"></div>
+
+                </div>
+
+              </div>
+
+              <div class="skill-bar">
+
+                <span>CSS</span>
+
+                <div class="bar">
+
+                  <div class="progress" style="width: 90%"></div>
+
+                </div>
+
+              </div>
+
+              <div class="skill-bar">
+
+                <span>JavaScript</span>
+
+                <div class="bar">
+
+                  <div class="progress" style="width: 80%"></div>
+
+                </div>
+
+              </div>
+
+              <div class="skill-bar">
+
+                <span>PHP</span>
+
+                <div class="bar">
+
+                  <div class="progress" style="width: 70%"></div>
+
+                </div>
+
+              </div>
+
+              <div class="skill-bar">
+
+                <span>MySQL</span>
+
+                <div class="bar">
+
+                  <div class="progress" style="width: 75%"></div>
+
+                </div>
+
+              </div>
+
+              <div class="skill-bar">
+
+                <span>Java</span>
+
+                <div class="bar">
+
+                  <div class="progress" style="width: 65%"></div>
+
+                </div>
+
+              </div>
+
+              <div class="skill-bar">
+
+                <span>Figma</span>
+
+                <div class="bar">
+
+                  <div class="progress" style="width: 85%"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="contact-section" id="contact">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info" data-aos="fade-right">
+        <h3>Let’s Collaborate</h3>
+        <p>
+          Have a project idea or just want to connect? My inbox is always open.
+          Reach out, and let's build something amazing together!
+        </p>
+        <a href="mailto:hontap.cs@gmail.com" class="contact-link">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          hontap.cs@gmail.com
+        </a>
+        <a href="tel:+211922863636" class="contact-link">
+          <i class="fas fa-phone" aria-hidden="true"></i> +211 922 863 636
+        </a>
+        <p class="contact-link-static">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Juba, South
+          Sudan
+        </p>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-aos="fade-left">
+        <div class="form-group">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            aria-label="Your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            aria-label="Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            aria-label="Your Message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn">
+          Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+        </button>
+      </form>
     </div>
+  </div>
+</section>
 
-    <div class="footer-bottom">
-        <p>&copy; 2025 Hon Tap. All rights reserved.</p>
-    </div>
-</footer>
+    <footer class="footer">
+
+      <div class="container footer-container">
+
+        <div class="footer-col brand">
+
+          <a href="#home" class="logo">HT</a>
+
+          <p>
+
+            A passionate Web Developer and UI/UX enthusiast dedicated to
+
+            building impactful digital solutions.
+
+          </p>
+
+          <div class="footer-socials">
+
+            <a
+
+              href="https://github.com/Hon-Tap"
+
+              target="_blank"
+
+              aria-label="GitHub"
+
+              ><i class="fab fa-github"></i
+
+            ></a>
+
+            <a href="#" target="_blank" aria-label="LinkedIn"
+
+              ><i class="fab fa-linkedin"></i
+
+            ></a>
+
+            <a
+
+              href="https://wa.me/message/TE3Y6DXAFZ3OL1"
+
+              target="_blank"
+
+              aria-label="WhatsApp"
+
+              ><i class="fab fa-whatsapp"></i
+
+            ></a>
+
+            <a href="#" target="_blank" aria-label="Twitter"
+
+              ><i class="fab fa-twitter"></i
+
+            ></a>
+
+          </div>
+
+        </div>
 
 
-<!-- Scripts -->
 
-<!-- AOS JS -->
+        <div class="footer-col links">
+
+          <h4>Quick Links</h4>
+
+          <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#resume">Resume</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-col contact-info">
+
+          <h4>Get in Touch</h4>
+
+          <ul>
+
+            <li>
+
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+
+              <a href="mailto:hontap.cs@gmail.com">hontap.cs@gmail.com</a>
+
+            </li>
+
+            <li>
+
+              <i class="fas fa-phone" aria-hidden="true"></i>
+
+              <a href="tel:+211922863636">+211 922 863 636</a>
+
+            </li>
+
+            <li>
+
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Juba,
+
+              South Sudan
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p>&copy; 2025 Hon Tap. All Rights Reserved.</p>
+
+      </div>
+
+    </footer>
+    
+<!-- AOS Animation Library -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- Initialize EmailJS Public Key -->
 <script>
-    AOS.init({
-        duration: 1000, // animation duration in ms
-        once: true      // only animate once while scrolling down
-    });
+  emailjs.init("7IW9H7Q9P_Om3dfEw");
 </script>
 
-
-<script src="libs/aos.min.js"></script>
+<!-- Optional Custom JS for general interactions -->
 <script src="js/script.js"></script>
-<script>AOS.init();</script>
 
-</body>
+<!-- Main JS with Navigation, Projects, Resume, Contact Form -->
+<script src="assets/js/main.js"></script>
+    </body>
 </html>
